@@ -1,5 +1,5 @@
 function Attendence () {
-  const record = [
+  const records = [
   {
     "id": 1,
     "subject": "Data Structures",
@@ -55,9 +55,27 @@ function Attendence () {
     "status_type": "danger"
   }
 ]
+
   return(
     <div className="bg-bg relative min-h-screen text-heading">
 
+      <div className="bg-surface text-2xl font-bold py-4 pl-8">Attendence Tracking</div>
+
+      <div className="m-6 md:grid md:grid-cols-2 lg:grid-cols-4 flex flex-col gap-4">
+        {records.map((record,index)=>(
+          <div key={index} className="bg-surface p-4 rounded-xl flex-col">
+            <div className="justify-between flex">
+              <p className="font-semibold">{record.subject}</p>
+              <p>{record.percentage}%</p>
+            </div>
+            <div className="pt-4">
+              <p>you attended {record.attended_classes} of {record.total_classes}</p>
+              <p>{record.status_message}</p>
+            </div>
+
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
