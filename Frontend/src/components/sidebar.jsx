@@ -11,12 +11,12 @@ function Sidebar()
           </div>
         </div>
         <div className="flex flex-col gap-2 px-4">
-          <link to='/' className="py-3 pl-6 hover:bg-surface rounded-lg">Dashboard</link>
-          <link to='/semester'  className="py-3 pl-6 hover:bg-surface rounded-lg">Semester Details</link>
-          <link to='/planner'  className="py-3 pl-6 hover:bg-surface rounded-lg">AI study planner</link>
-          <link to='/tasks'  className="py-3 pl-6 hover:bg-surface rounded-lg">Tasks and Planner</link>
-          <link to='/attendence'  className="py-3 pl-6 hover:bg-surface rounded-lg">Attendence</link>
-          <link to='/settinglink'  className="py-3 pl-6 hover:bg-surface rounded-lg">Profile and Settings</link>
+          <Link to='/' className="py-3 pl-6 hover:bg-surface rounded-lg">Dashboard</Link>
+          <Link to='/semester'  className="py-3 pl-6 hover:bg-surface rounded-lg">Semester Details</Link>
+          <Link to='/planner'  className="py-3 pl-6 hover:bg-surface rounded-lg">AI study planner</Link>
+          <Link to='/tasks'  className="py-3 pl-6 hover:bg-surface rounded-lg">Tasks and Planner</Link>
+          <Link to='/attendence'  className="py-3 pl-6 hover:bg-surface rounded-lg">Attendence</Link>
+          <Link to='/settinglink'  className="py-3 pl-6 hover:bg-surface rounded-lg">Profile and Settings</Link>
         </div>
       </div>
   )
