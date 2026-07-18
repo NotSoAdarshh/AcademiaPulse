@@ -15,9 +15,11 @@ function App() {
 
   return (
     <Router>
-      <Sidebar></Sidebar>
+      <div className='bg-bg flex min-h-screen'>
+        <Sidebar></Sidebar>
 
-      <Routes>
+        <div className='grow'>
+        <Routes>
         <Route path='/' element={<Dashboard/>}></Route>
         <Route path='/semester' element={<SemesterDetails/>}></Route>
         <Route path='/planner' element={<Planner/>}></Route>
@@ -25,6 +27,10 @@ function App() {
         <Route path='/attendence' element={<Attendence/>}></Route>
         <Route path='/settings' element={<Settings/>}></Route>
       </Routes>
+        </div>
+      </div>
+
+      
     </Router>
   )
 }
