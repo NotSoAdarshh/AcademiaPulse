@@ -7,13 +7,14 @@ import SemesterDetails from './components/semesterDetailsPage'
 import Planner from './components/plannerPage'
 import Tasks from './components/tasksPage'
 import Attendence from './components/attendencePage'
+import Settings from './components/profileAndSettingsPage'
 
 function App() {
   
 
   return (
     <>
-    <Attendence></Attendence>
+    <Settings></Settings>
     </>
   )
 }
