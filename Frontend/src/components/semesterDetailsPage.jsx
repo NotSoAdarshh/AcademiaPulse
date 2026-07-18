@@ -56,14 +56,14 @@ function SemesterDetails () {
       <div className="bg-surface text-2xl font-bold py-4 pl-8">Semester Details</div>
 
       <div className="flex gap-4 m-6">
-        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonClick">Sem 1</button>
-        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonClick">Sem 2</button>
-        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonClick">Sem 3</button>
-        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonClick">Sem 4</button>
-        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonClick">Sem 5</button>
-        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonClick">Sem 6</button>
-        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonClick">Sem 7</button>
-        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonClick">Sem 8</button>
+        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonCl">Sem 1</button>
+        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonCl">Sem 2</button>
+        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonCl">Sem 3</button>
+        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonCl">Sem 4</button>
+        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonCl">Sem 5</button>
+        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonCl">Sem 6</button>
+        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonCl">Sem 7</button>
+        <button type="button" className="p-2 px-4 bg-surface rounded-lg hover:bg-buttonCl">Sem 8</button>
       </div>
 
       <div className="bg-surface grid ">
