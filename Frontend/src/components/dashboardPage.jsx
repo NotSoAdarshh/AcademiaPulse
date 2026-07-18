@@ -19,7 +19,8 @@ function Dashboard ()
       due : 'due in 2 days'
     }
   ];
-  const Alerts = [
+
+  const announ = [
     {
       type : 'Alert',
       info : 'attendence kam hai gelchode'
@@ -32,10 +33,10 @@ function Dashboard ()
       type : 'Announcement',
       info : 'Midsem Ka tt aagaya'
     }
-  ],
+  ];
 
   return (
-    <div className="bg-bg h-dvh relative text-heading">
+    <div className="bg-bg min-h-screen pb-8 relative text-heading">
       <div className="bg-surface text-2xl font-bold py-4 pl-8">Dashboard</div>
 
       <div className="lg:flex-row m-6 justify-center gap-4 lg:gap-8  text-sm flex flex-col">
@@ -54,17 +55,32 @@ function Dashboard ()
       </div>
 
       <div className="bg-surface mx-6 rounded-xl p-6">
-        <p className="font-xl font-bold">Upcomming Deadlines</p>
+        <p className="text-xl font-bold pb-6">Upcomming Deadlines</p>
+        {tasks.map((task,index)=>(
+          <div key={index} className=" flex p-2 border-b justify-between">
+            <div className="flex flex-col">
+            <p className="font-bold ">{task.title}</p>
+            <p className="text-sm">{task.description}</p>
+            </div>
+            <span>{task.due}</span>
+          </div>
+
+        ))}
       </div>
 
-      <div className="flex m-6 gap-4">
-        <div className="bg-surface w-2/3 rounded-xl p-6">
+      <div className="flex lg:flex-row flex-col m-6 gap-4">
+        <div className="bg-surface lg:w-2/3 rounded-xl p-6">
           <p className="text-md font-bold ">CPI Trend</p>
         </div>
-        <div className="text-heading bg-surface w-1/3 rounded-xl p-6">
+        <div className="text-heading bg-surface lg:w-1/3 rounded-xl p-6">
           <p className="text-md font-bold">Alerts</p>
+          {announ.map((annou,index)=>(
+            <div key={index} className="flex border-b-2 p-4 flex-col">
+              <p>{annou.type}</p>
+              <div>{annou.info}</div>
+            </div>
+          ))}
         </div>
-
       </div>
 
     </div>
