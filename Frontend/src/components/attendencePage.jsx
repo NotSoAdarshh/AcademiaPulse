@@ -57,7 +57,7 @@ function Attendence () {
 ]
 
   return(
-    <div className="bg-bg relative min-h-screen text-heading">
+    <div className="bg-bg min-h-screen text-heading">
 
       <div className="bg-surface text-2xl font-bold py-4 pl-8">Attendence Tracking</div>
 

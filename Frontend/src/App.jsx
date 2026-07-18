@@ -25,7 +25,7 @@ function App() {
         <Route path='/planner' element={<Planner/>}></Route>
         <Route path='/tasks' element={<Tasks/>}></Route>
         <Route path='/attendence' element={<Attendence/>}></Route>
-        <Route path='/settings' element={<Settings/>}></Route>
+        <Route path='/setting' element={<Settings/>}></Route>
       </Routes>
         </div>
       </div>
