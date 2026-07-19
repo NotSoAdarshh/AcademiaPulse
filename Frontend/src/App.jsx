@@ -15,8 +15,8 @@ function App() {
 
   return (
     <Router>
-      <div className='bg-bg flex min-h-screen'>
-        <Sidebar></Sidebar>
+      <div className='bg-bg flex min-h-screen w-full items-start'>
+        <Sidebar className ='top-0 sticky'></Sidebar>
 
         <div className='grow'>
         <Routes>

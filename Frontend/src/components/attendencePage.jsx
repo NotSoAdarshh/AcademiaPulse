@@ -69,7 +69,7 @@ function Attendence () {
               <p>{record.percentage}%</p>
             </div>
             <div className="pt-4">
-              <p>you attended {record.attended_classes} of {record.total_classes}</p>
+              <p className="opacity-60 mb-4">you attended {record.attended_classes} of {record.total_classes}</p>
               <p>{record.status_message}</p>
             </div>
 

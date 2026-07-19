@@ -37,9 +37,9 @@ function Tasks(){
         <button type="button" className="bg-lighter hover:bg-bg rounded-xl p-4 w-1/10">Add</button>
       </div>
 
-      <div className="bg-surface m-6 rounded-xl">
+      <div className="bg-surface m-6 rounded-xl p-4">
         {tasks.map((task,index)=>(
-          <div key={index} className="flex flex-col border-b-2 p-4" >
+          <div key={index} className="flex flex-col m-2 border-b-2 p-4" >
             <div>
               <div className="justify-between flex ">
               <div>

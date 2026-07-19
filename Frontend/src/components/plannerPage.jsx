@@ -119,15 +119,15 @@ function Planner () {
     <div key={index} className="bg-surface rounded-xl flex flex-col p-4">
       
       <div> 
-        <p className="font-bold">{study.day}</p>
+        <p className="font-bold pb-4">{study.day}</p>
       </div>
 
       <div className="grow">
         {study.sessions.map((session, sessionIndex) => (
-          <div key={sessionIndex} className="mb-2">
+          <div key={sessionIndex} className="mb-4">
             <p>{session.subject}</p>
             <p>{session.topic}</p>
-            <p className="text-sm opacity-75">{session.duration}</p>
+            <p className="text-sm opacity-60">{session.duration}</p>
           </div>
         ))}
       </div>
